@@ -34,6 +34,7 @@ const Header = (props: HeaderProps) => {
                 className="list"
                 onClick={() => {
                   props.setActivePage(planet.name);
+                  setHideNav(true);
                 }}
               >
                 <div>

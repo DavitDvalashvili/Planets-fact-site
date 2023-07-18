@@ -3,8 +3,19 @@ export interface HeaderProps {
   activePage: string;
 }
 
-// export interface HeaderType {
-//   activePage: string;
-//   ChooseColor: (parameter: number) => string;
-//   activeIndex: number;
-// }
+export interface CategoryType {
+  ChooseColor: (parameter: number) => string;
+  activeIndex: number;
+  categoryINdex: number;
+}
+
+export interface InfoPropsType {
+  categoryIndex: number;
+  activeIndex: number;
+  setCategoryIndex: React.Dispatch<React.SetStateAction<number>>;
+  innerWidth: number;
+}
+
+export interface StatisticsType {
+  activeIndex: number;
+}

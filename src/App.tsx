@@ -3,9 +3,9 @@ import { useState, createContext } from "react";
 import styled from "styled-components";
 import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
-import Planets from "./components/Pages/Planets";
+import Planets from "./components/Planets";
 import data from "./data.json";
-import Home from "./components/Pages/Home";
+import Home from "./components/Planets";
 import DefaultTheme from "./DefaultTheme";
 
 export const activeContext = createContext<string | null>(null);

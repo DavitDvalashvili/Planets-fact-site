@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import DefaultTheme from "../../DefaultTheme";
-import { HeaderType } from "../../Types";
 
-const HeaderStyles = styled.div<HeaderType>`
+const HeaderStyles = styled.div`
   color: ${DefaultTheme.colors.White};
   display: flex;
   justify-content: space-between;
