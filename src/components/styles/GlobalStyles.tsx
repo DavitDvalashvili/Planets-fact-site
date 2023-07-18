@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import DefaultTheme from "../../DefaultTheme";
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -8,5 +9,12 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
 }
-    
+body {
+  background-color: ${DefaultTheme.colors.MysteriousDepths};
+  background-image: url(../public/assets/background-stars.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+} 
 `;

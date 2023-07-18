@@ -16,6 +16,10 @@ export interface InfoPropsType {
   innerWidth: number;
 }
 
+export interface InfoType {
+  activeIndex: number;
+}
+
 export interface StatisticsType {
   activeIndex: number;
 }

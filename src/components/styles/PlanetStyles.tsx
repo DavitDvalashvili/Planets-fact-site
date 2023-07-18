@@ -24,8 +24,5 @@ const PlanetStyles = styled.div<CategoryType>`
       }
     }
   }
-  .infoBox {
-    background-color: red;
-  }
 `;
 export default PlanetStyles;
