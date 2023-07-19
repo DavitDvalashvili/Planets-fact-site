@@ -15,7 +15,7 @@ const Planets = () => {
     if (planet.name === context) {
       useEffect(() => {
         setActiveIndex(index);
-        setCategoryIndex(1);
+        //setCategoryIndex(1);
       }, [context]);
     }
   });
@@ -94,6 +94,7 @@ const Planets = () => {
         categoryIndex={categoryIndex}
         setCategoryIndex={setCategoryIndex}
         innerWidth={innerWidth}
+        ChooseColor={ChooseColor}
       />
       <Statistics activeIndex={activeIndex} />
     </PlanetStyles>

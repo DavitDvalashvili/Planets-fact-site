@@ -26,6 +26,43 @@ const StatisticStyle = styled.div`
       letter-spacing: -0.75px;
     }
   }
+  @media (min-width: 768px) {
+    padding: 27px 39px 36px 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    div {
+      width: 164px;
+      padding: 16px 15px 19px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 6px;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    gap: 30px;
+    padding: 0px 0px 0px 0px;
+    div {
+      width: 255px;
+      margin-bottom: 56px;
+      padding: 20px 23px 27px 23px;
+      gap: 4px;
+      h4 {
+        letter-spacing: 1px;
+        font-size: 11px;
+      }
+      span {
+        font-size: 40px;
+        letter-spacing: -1.5px;
+      }
+    }
+  }
 `;
 
 export default StatisticStyle;

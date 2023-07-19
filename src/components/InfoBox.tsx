@@ -6,7 +6,11 @@ import InfoStyle from "./styles/InfoStyle";
 const InfoBox = (props: InfoPropsType) => {
   console.log(props.activeIndex);
   return (
-    <InfoStyle activeIndex={props.activeIndex}>
+    <InfoStyle
+      activeIndex={props.activeIndex}
+      categoryIndex={props.categoryIndex}
+      ChooseColor={props.ChooseColor}
+    >
       <div className="imageBox">
         {props.categoryIndex == 1 && (
           <img src={data[props.activeIndex].images.planet} alt="planet" />
@@ -18,7 +22,11 @@ const InfoBox = (props: InfoPropsType) => {
           <img src={data[props.activeIndex].images.planet} alt="planet" />
         )}
         {props.categoryIndex == 3 && props.innerWidth >= 1440 && (
-          <img src={data[props.activeIndex].images.geology} alt="planet" />
+          <img
+            className="geology"
+            src={data[props.activeIndex].images.geology}
+            alt="planet"
+          />
         )}
       </div>
       <div className="textBox">

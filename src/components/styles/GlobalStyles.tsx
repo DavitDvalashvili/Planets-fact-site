@@ -16,5 +16,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  &::-webkit-scrollbar {
+  display: none;
+}
 } 
 `;
