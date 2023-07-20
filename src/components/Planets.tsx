@@ -12,13 +12,15 @@ const Planets = () => {
   const [categoryIndex, setCategoryIndex] = useState(1);
 
   data.map((planet, index) => {
-    if (planet.name === context) {
+    if (planet.name === location.pathname.slice(1)) {
       useEffect(() => {
         setActiveIndex(index);
-        //setCategoryIndex(1);
+        setCategoryIndex(1);
       }, [context]);
     }
   });
+
+  console.log(location.pathname.slice(1));
 
   //target inner width of the window
   const [innerWidth, setInnerWidth] = useState<number>(window.innerWidth);

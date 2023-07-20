@@ -4,12 +4,11 @@ import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import Planets from "./components/Planets";
 import data from "./data.json";
-import Home from "./components/Home";
 
 export const activeContext = createContext<string | null>(null);
 
 function App() {
-  const [activePage, setActivePage] = useState("Mercury");
+  const [activePage, setActivePage] = useState("");
 
   return (
     <>
@@ -18,10 +17,9 @@ function App() {
         <Header setActivePage={setActivePage} activePage={activePage} />
         <activeContext.Provider value={activePage}>
           <Routes>
-            <Route path="/" index element={<Home />} />
             {data.map((planet) => (
               <Route
-                path={planet.name}
+                path={`${planet.name}`}
                 key={planet.name}
                 element={<Planets />}
               />

@@ -27,6 +27,23 @@ const Header = (props: HeaderProps) => {
       {(!hideNav || innerWidth >= 768) && (
         <nav>
           <ul>
+            {/* <Link
+              to="Earth"
+              onClick={() => {
+                props.setActivePage("Earth");
+              }}
+            >
+              Earth
+            </Link>
+            <Link
+              to="Mars"
+              onClick={() => {
+                props.setActivePage("Mars");
+              }}
+            >
+              Mars
+            </Link> */}
+
             {data.map((planet) => (
               <Link
                 key={planet.name}
