@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import DefaultTheme from "../../DefaultTheme";
+import cover from "./../../../public/assets/background-stars.svg";
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -11,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 body {
   background-color: ${DefaultTheme.colors.MysteriousDepths};
-  background-image: url(../public/assets/background-stars.svg);
+  background-image: url(${cover});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,12 +1,12 @@
-import data from "../data.json";
+import data from "./../../data.json";
 import { useState } from "react";
 import { HeaderProps } from "../Types";
 import { Link } from "react-router-dom";
 import HeaderStyles from "./styles/HeaderStyles";
-import hamburger from "../assets/icon-hamburger.svg";
-import close from "../assets/icons-close.svg";
+import hamburger from "./../../public/assets/icon-hamburger.svg";
+import close from "./../../public/assets/icons-close.svg";
 import { motion } from "framer-motion";
-import arrow from "../assets/icon-chevron.svg";
+import arrow from "./../../public/assets/icon-chevron.svg";
 
 const Header = (props: HeaderProps) => {
   //hook and handle click event for toggling navbar
@@ -27,23 +27,6 @@ const Header = (props: HeaderProps) => {
       {(!hideNav || innerWidth >= 768) && (
         <nav>
           <ul>
-            {/* <Link
-              to="Earth"
-              onClick={() => {
-                props.setActivePage("Earth");
-              }}
-            >
-              Earth
-            </Link>
-            <Link
-              to="Mars"
-              onClick={() => {
-                props.setActivePage("Mars");
-              }}
-            >
-              Mars
-            </Link> */}
-
             {data.map((planet) => (
               <Link
                 key={planet.name}

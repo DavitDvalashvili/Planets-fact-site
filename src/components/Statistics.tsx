@@ -1,4 +1,4 @@
-import data from "../data.json";
+import data from "./../../data.json";
 import { StatisticsType } from "../Types";
 import StatisticStyle from "./styles/StatisticsStyle";
 

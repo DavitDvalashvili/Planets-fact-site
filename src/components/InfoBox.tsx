@@ -1,10 +1,12 @@
 import { InfoPropsType } from "../Types";
-import data from "../data.json";
-import source from "../../public/assets/icon-source.svg";
+import data from "./../../data.json";
+import source from "./../../public/assets/icon-source.svg";
 import InfoStyle from "./styles/InfoStyle";
 
 const InfoBox = (props: InfoPropsType) => {
   console.log(props.activeIndex);
+  console.log(data[0].images.internal);
+
   return (
     <InfoStyle
       activeIndex={props.activeIndex}

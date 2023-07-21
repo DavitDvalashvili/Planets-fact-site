@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { activeContext } from "../App";
 import DefaultTheme from "../DefaultTheme";
 import PlanetStyles from "./styles/PlanetStyles";
-import data from "../data.json";
+import data from "./../../data.json";
 import InfoBox from "./InfoBox";
 import Statistics from "./Statistics";
 
@@ -19,8 +19,6 @@ const Planets = () => {
       }, [context]);
     }
   });
-
-  console.log(location.pathname.slice(1));
 
   //target inner width of the window
   const [innerWidth, setInnerWidth] = useState<number>(window.innerWidth);
