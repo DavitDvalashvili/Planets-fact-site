@@ -18,13 +18,13 @@ const HeaderStyles = styled.div`
     letter-spacing: -0.76px;
   }
   nav {
+    height: 100vh;
     position: absolute;
     top: 69px;
     left: 0px;
     width: 100vw;
     background-color: ${DefaultTheme.colors.MysteriousDepths};
     z-index: 5;
-    height: 100vh;
     ul {
       margin: 24px;
       margin-bottom: 70px;
@@ -101,10 +101,10 @@ const HeaderStyles = styled.div`
     padding: unset;
     padding: 32px 0px 27px 0px;
     nav {
+      height: unset;
       position: unset;
       width: unset;
       margin-top: 39px;
-      height: unset;
       ul {
         margin: unset;
         display: flex;

@@ -25,11 +25,7 @@ const Header = (props: HeaderProps) => {
     <HeaderStyles>
       <h1>THE PLANETS</h1>
       {(!hideNav || innerWidth >= 768) && (
-        <motion.nav
-          initial={{ x: "-100%" }}
-          animate={{ x: !hideNav ? 0 : "-100%" }}
-          transition={{ type: "tween", duration: 0.3 }}
-        >
+        <nav>
           <ul>
             {data.map((planet) => (
               <Link
@@ -49,7 +45,7 @@ const Header = (props: HeaderProps) => {
               </Link>
             ))}
           </ul>
-        </motion.nav>
+        </nav>
       )}
       {hideNav && innerWidth < 768 && (
         <motion.img
