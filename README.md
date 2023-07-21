@@ -13,7 +13,7 @@
 ### Prerequisites
 
 - <img src="public/readme/npm.png" width="25" style="top: 8px" /> _npm @8 and up_
-- <img src="public/readme/js.png" width="25" style="top: 8px" /> \_javascript es6
+- <img src="public/readme/typescript.png" width="25" style="top: 8px" /> \_typescript es6
 - <img src="public/readme/vite.jpg" width="25" style="top: 8px" /> \_vite @4.0.0
 
 #
@@ -21,7 +21,7 @@
 ### Tech Stack
 
 - <img src="public/readme/React.png" width="25" style="top: 8px" /> _ReactJS @18.1.0 - frontend framework_
-- <img src="public/readme/tailwind.png" width="25" style="top: 8px" /> _Tailwind CSS v3.0 - visual primitives for the component age_
+- <img src="public/readme/styled-components.png" width="25" style="top: 8px" /> \_Styled-components @5.3.9 - visual primitives for the component age
 
 ### Interaction
 
@@ -76,7 +76,6 @@ npm run dev
 
 ```
 
-
 #
 
 ### Deployment
@@ -87,8 +86,6 @@ Before every deployment you need to create build file.
 
 npm run build
 
-```
-
 after this you can use this file to deploy project on server.
 
 #
@@ -98,4 +95,3 @@ after this you can use this file to deploy project on server.
 - Github profile - [Add your name here](https://github.com/DavitDvalashvili)
 - Linkedin profile - [Add your name here](https://www.linkedin.com/in/davit-dvalashvili-0421b6253)
 - Email - [@your_username](davitdvalashvili1996@gmail.com)
-```
