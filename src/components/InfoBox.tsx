@@ -7,6 +7,8 @@ const InfoBox = (props: InfoPropsType) => {
   console.log(props.activeIndex);
   console.log(data[0].images.internal);
 
+  console.log(data[props.activeIndex].overview.source);
+
   return (
     <InfoStyle
       activeIndex={props.activeIndex}
@@ -36,9 +38,9 @@ const InfoBox = (props: InfoPropsType) => {
           <h1>{data[props.activeIndex].name}</h1>
           <p>{data[props.activeIndex].overview.content}</p>
           <div className="source">
-            <span>Source :</span>
-            <span>Wikipedia</span>
             <a href={data[props.activeIndex].overview.source} target="blank">
+              <span>Source :</span>
+              <span>Wikipedia</span>
               <img src={source} alt="source-link" />
             </a>
           </div>

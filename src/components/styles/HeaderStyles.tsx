@@ -23,6 +23,8 @@ const HeaderStyles = styled.div`
     left: 0px;
     width: 100vw;
     background-color: ${DefaultTheme.colors.MysteriousDepths};
+    z-index: 5;
+    height: 100vh;
     ul {
       margin: 24px;
       margin-bottom: 70px;
@@ -102,6 +104,7 @@ const HeaderStyles = styled.div`
       position: unset;
       width: unset;
       margin-top: 39px;
+      height: unset;
       ul {
         margin: unset;
         display: flex;

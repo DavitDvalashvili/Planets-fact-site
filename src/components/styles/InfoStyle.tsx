@@ -55,13 +55,17 @@ const InfoStyle = styled.div<InfoType>`
         font-size: 12px;
         opacity: 0.5;
         line-height: 25px;
-        span:nth-of-type(2) {
-          font-weight: 700;
-          text-decoration: underline;
-          margin: 0px 4px 0px 3px;
-        }
-        img {
-          margin-bottom: -4px;
+        a {
+          text-decoration: none;
+          color: inherit;
+          span:nth-of-type(2) {
+            font-weight: 700;
+            text-decoration: underline;
+            margin: 0px 4px 0px 3px;
+          }
+          img {
+            margin-bottom: -4px;
+          }
         }
       }
     }
