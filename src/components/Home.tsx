@@ -1,13 +1,9 @@
-import styled from "styled-components";
+import { Navigate } from "react-router-dom";
 
-export const Home = () => {
-  return (
-    <Homes>
-      <p>Home</p>
-    </Homes>
-  );
+const Home = () => {
+  if (true) {
+    return <Navigate to="Mercury" />;
+  }
 };
 
-const Homes = styled.div`
-  background-color: red;
-`;
+export default Home;
